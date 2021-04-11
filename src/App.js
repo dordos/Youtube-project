@@ -1,11 +1,6 @@
-import './app.css';
+import React from 'react';
+import Search_bar from './components/search_bar/search_bar';
 
-function App() {
-  return (
-    <>
-      <h1>123</h1>
-    </>
-  );
-}
+const App = (props) => <Search_bar />;
 
 export default App;

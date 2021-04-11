@@ -1,0 +1,101 @@
+.header {
+  height: 56px;
+  display: flex;
+  background-color: #191919;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 36px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu svg {
+  font-size: 24px;
+  color: white;
+}
+
+.menu img {
+  padding-left: 36px;
+  height: 24px;
+}
+
+.menu h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.search input {
+  width: 20rem;
+  height: 24px;
+  background-color: #0f0f0f;
+}
+
+.search button {
+}
+
+.button {
+  /* padding: 0; */
+
+  /* box-sizing: border-box; */
+  /* height: 30px; */
+}
+
+.search img {
+  width: 65px;
+  height: 30px;
+  background-color: #252525;
+}
+
+.etc {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.etc svg {
+  padding: 0px 10px;
+}
+
+.etc_button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #3392ff;
+  border: 1px solid #3392ff;
+  outline: none;
+  height: 40px;
+}
+
+.etc_button svg {
+  font-size: 24px;
+}
+
+.etc_button p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contentBox {
+  display: flex;
+}
+.side_bar {
+  width: 90px;
+  height: 100%;
+  background-color: red;
+}
+
+.side_bar_ul {
+}
+
+.side_bar_li {
+}
+
+.content {
+  background-color: blue;
+  display: flex;
+}
