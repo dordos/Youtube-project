@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
-.root {
+html,
+body,
+#root {
   height: 100%;
+  background-color: #191919;
 }
