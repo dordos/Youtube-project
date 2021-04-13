@@ -15,6 +15,7 @@
 .menu svg {
   font-size: 24px;
   color: white;
+  cursor: pointer;
 }
 
 .menu img {
@@ -27,26 +28,37 @@
   font-size: 24px;
 }
 
+.search {
+  display: flex;
+}
+
 .search input {
-  width: 20rem;
+  width: 35rem;
   height: 24px;
   background-color: #0f0f0f;
+  border: 0;
+  color: white;
+  font-size: 16px;
 }
 
 .search button {
+  width: 60px;
+  height: 26px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
 }
 
-.button {
-  /* padding: 0; */
-
-  /* box-sizing: border-box; */
-  /* height: 30px; */
+.search svg {
+  font-size: 24px;
+  color: white;
+  margin-left: 15px;
 }
 
-.search img {
-  width: 65px;
-  height: 30px;
-  background-color: #252525;
+.buttonImg {
+  width: 16px;
+  height: 12px;
+  background-color: #2b2b2b;
 }
 
 .etc {
@@ -68,6 +80,7 @@
   border: 1px solid #3392ff;
   outline: none;
   height: 40px;
+  cursor: pointer;
 }
 
 .etc_button svg {
@@ -78,6 +91,16 @@
   display: flex;
   align-items: center;
   font-size: 15px;
+  margin-right: 10px;
+}
+
+.side_login {
+  margin-left: 30px;
+}
+
+.side_login svg {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .contentBox {
@@ -85,7 +108,7 @@
   height: 100%;
 }
 .side_bar {
-  width: 250px;
+  width: 300px;
   height: 100%;
   color: #7d7d7d;
   font-weight: 600;
@@ -134,12 +157,51 @@ svg:not(:root).svg-inline--fa {
 }
 
 .side_bar_li_title p {
-  margin-left: 30px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
+}
+
+.side_bar_text {
+  font-size: 13px;
+  margin-left: 30px;
 }
 
 .content {
   background-color: blue;
-  display: flex;
+  width: 100%;
+
+  /* display: flex; */
+}
+
+.content_poster {
+  position: relative;
+}
+
+.content_poster img {
+  width: 100%;
+  height: 260px;
+  overflow-x: hidden;
+}
+
+.content_poster_delete {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 22px;
+  padding: 1px 7px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.541);
+  border: 0px;
+}
+
+.content_poster_wacth {
+  position: absolute;
+  top: 12rem;
+  left: 4rem;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px black solid;
+  font-weight: 400;
+  padding: 5px 15px;
+  cursor: pointer;
 }

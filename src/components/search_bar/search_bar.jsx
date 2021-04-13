@@ -60,11 +60,11 @@ const Search_bar = (props) => (
               표시하고 댓글을 달거나 구독할
               <br />수 있습니다.
             </h3>
-            <button className='etc_button'>
-              <i class='fas fa-user-circle'></i>
-              <p>로그인</p>
-            </button>
           </li>
+          <button className='etc_button side_login '>
+            <i class='fas fa-user-circle'></i>
+            <p>로그인</p>
+          </button>
           <hr />
           <li className='side_bar_li_title'>
             <h3>인기 YOUTUBE</h3>
@@ -132,34 +132,38 @@ const Search_bar = (props) => (
               <i class='fas fa-exclamation-triangle'></i>
               <p>의견보내기</p>
             </li>
-            <hr />
-            <p className='side_bar_text'>
-              정보 보도자료 저작권 문의하기
-              <br />
-              크리에이터 광고 개발자
-              <br />
-              <br />
-              약관 개인정보처리방침
-              <br />
-              정책 및 안전
-              <br />
-              YouTube 작동의 원리
-              <br />
-              새로운 기능 테스트하기
-            </p>
-            <p className='side_bar_text'>
-              © 2021 Google LLC <br /> CEO: 선다 피차이
-              <br /> 주소: 1600 Amphitheatre
-              <br /> Parkway, Mountain View, CA
-              <br /> 94043, USA.
-              <br /> 전화: 080-822-1450(무료)
-            </p>
           </li>
+          <hr />
+          <p className='side_bar_text'>
+            정보 보도자료 저작권 문의하기
+            <br />
+            크리에이터 광고 개발자
+            <br />
+            <br />
+            약관 개인정보처리방침
+            <br />
+            정책 및 안전
+            <br />
+            YouTube 작동의 원리
+            <br />
+            새로운 기능 테스트하기
+          </p>
+          <p className='side_bar_text'>
+            © 2021 Google LLC <br /> CEO: 선다 피차이
+            <br /> 주소: 1600 Amphitheatre
+            <br /> Parkway, Mountain View, CA
+            <br /> 94043, USA.
+            <br /> 전화: 080-822-1450(무료)
+          </p>
         </ul>
       </div>
 
       <div className='content'>
-        <h1>123</h1>
+        <div className='content_poster'>
+          <button className='content_poster_delete'>X</button>
+          <button className='content_poster_wacth'>지금보기</button>
+          <img src='/images/youtube-posters.png' alt='' />
+        </div>
       </div>
     </div>
   </>
