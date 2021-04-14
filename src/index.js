@@ -4,6 +4,7 @@ import './index.css';
 import App from './app';
 import '@fortawesome/fontawesome-free/js/all.js';
 
+const youtube = new Youtube();
 ReactDOM.render(
   <React.StrictMode>
     <App />

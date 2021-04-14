@@ -20,9 +20,9 @@ const Search_bar = (props) => (
 
       <div className='etc'>
         <i className='fas fa-th'></i>
-        <i class='fas fa-ellipsis-v'></i>
+        <i className='fas fa-ellipsis-v'></i>
         <button className='etc_button'>
-          <i class='fas fa-user-circle'></i>
+          <i className='fas fa-user-circle'></i>
           <p>로그인</p>
         </button>
       </div>
@@ -32,24 +32,24 @@ const Search_bar = (props) => (
       <div className='side_bar'>
         <ul className='side_bar_ul'>
           <li className='side_bar_li'>
-            <i class='fas fa-home'></i>
+            <i className='fas fa-home'></i>
             <p>홈</p>
           </li>
           <li className='side_bar_li'>
-            <i class='fas fa-compass'></i>
+            <i className='fas fa-compass'></i>
             <p>탐색</p>
           </li>
           <li className='side_bar_li'>
-            <i class='fas fa-play'></i>
+            <i className='fas fa-play'></i>
             <p>구독</p>
           </li>
           <hr />
           <li className='side_bar_li'>
-            <i class='fas fa-copy'></i>
+            <i className='fas fa-copy'></i>
             <p>보관함</p>
           </li>
           <li className='side_bar_li'>
-            <i class='fas fa-history'></i>
+            <i className='fas fa-history'></i>
             <p>시청기록</p>
           </li>
           <hr />
@@ -62,74 +62,74 @@ const Search_bar = (props) => (
             </h3>
           </li>
           <button className='etc_button side_login '>
-            <i class='fas fa-user-circle'></i>
+            <i className='fas fa-user-circle'></i>
             <p>로그인</p>
           </button>
           <hr />
           <li className='side_bar_li_title'>
             <h3>인기 YOUTUBE</h3>
             <li className='side_bar_li'>
-              <i class='fas fa-music'></i>
+              <i className='fas fa-music'></i>
               <p>음악</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-trophy'></i>
+              <i className='fas fa-trophy'></i>
               <p>스포츠</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-gamepad'></i>
+              <i className='fas fa-gamepad'></i>
               <p>게임</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-film'></i>
+              <i className='fas fa-film'></i>
               <p>영화</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-file-alt'></i>
+              <i className='fas fa-file-alt'></i>
               <p>뉴스</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-satellite-dish'></i>
+              <i className='fas fa-satellite-dish'></i>
               <p>실시간</p>
             </li>
             <li className='side_bar_li'>
-              <i class='far fa-lightbulb'></i>
+              <i className='far fa-lightbulb'></i>
               <p>학습</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-vr-cardboard'></i>
+              <i className='fas fa-vr-cardboard'></i>
               <p>360º 동영상</p>
             </li>
             <hr />
             <li className='side_bar_li'>
-              <i class='fas fa-plus-circle'></i>
+              <i className='fas fa-plus-circle'></i>
               <p>채널 탐색</p>
             </li>
             <hr />
             <h3>YOUTUBE 더보기</h3>
             <li className='side_bar_li'>
-              <i class='fab fa-youtube'></i>
+              <i className='fab fa-youtube'></i>
               <p>YouTube Premium</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-satellite-dish'></i>
+              <i className='fas fa-satellite-dish'></i>
               <p>실시간</p>
             </li>
             <hr />
             <li className='side_bar_li'>
-              <i class='fas fa-cog'></i>
+              <i className='fas fa-cog'></i>
               <p>설정</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-flag'></i>
+              <i className='fas fa-flag'></i>
               <p>신고기록</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-question-circle'></i>
+              <i className='fas fa-question-circle'></i>
               <p>고객센터</p>
             </li>
             <li className='side_bar_li'>
-              <i class='fas fa-exclamation-triangle'></i>
+              <i className='fas fa-exclamation-triangle'></i>
               <p>의견보내기</p>
             </li>
           </li>
@@ -163,6 +163,9 @@ const Search_bar = (props) => (
           <button className='content_poster_delete'>X</button>
           <button className='content_poster_wacth'>지금보기</button>
           <img src='/images/youtube-posters.png' alt='' />
+        </div>
+        <div className='asdf'>
+          <h1>123</h1>
         </div>
       </div>
     </div>
