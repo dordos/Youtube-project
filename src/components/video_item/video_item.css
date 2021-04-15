@@ -1,0 +1,16 @@
+.video {
+  display: flex;
+  align-items: center;
+  border: 1px red solid;
+  cursor: pointer;
+  transition: transform 250ms ease-in;
+  width: 50%;
+}
+
+.video:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 40%;
+}

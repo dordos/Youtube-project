@@ -169,7 +169,6 @@ svg:not(:root).svg-inline--fa {
 .content {
   background-color: blue;
   width: 100%;
-
   /* display: flex; */
 }
 

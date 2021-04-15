@@ -1,19 +1,30 @@
 class Youtube {
   constructor(key) {
-    thks.key = key;
-    const requestOptions = {
+    this.key = key;
+    this.getRequestOptions = {
       method: 'GET',
       redirect: 'follow',
     };
   }
 
   mostPopular() {
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=bts&type=video&key=${this.key}`,
-      this.requestOptions
+    return fetch(
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=${this.key}`,
+      this.getRequestOptions
     )
       .then((response) => response.json())
-      .then((result) => setVideos(result.items));
+      .then((result) => result.items);
+  }
+
+  search(query) {
+    return fetch(
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&type=video&key=${this.key}`,
+      this.getRequestOptions
+    )
+      .then((response) => response.json())
+      .then((result) =>
+        result.items.map((item) => ({ ...item, id: item.id.videoId }))
+      );
   }
 }
 
