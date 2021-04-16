@@ -1,16 +1,17 @@
 import React from 'react';
 import './video_item.css';
 
-const VideoItem = ({ video: { snippet } }) => (
+const VideoItem = ({ video }) => (
   <li className='video'>
     <img
       className='thumbnail'
-      src={snippet.thumbnails.medium.url}
+      src={video.snippet.thumbnails.medium.url}
       alt='video thumbnail'
     />
     <div>
-      <p className='title'>{snippet.title}</p>
-      <p className='channel'>{snippet.channelTitle}</p>
+      <p className='title'>{video.snippet.title}</p>
+      <p className='channel'>{video.snippet.channelTitle}</p>
+      <p className='count'>{video.statistics.viewCount}</p>
     </div>
   </li>
 );

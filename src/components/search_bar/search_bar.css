@@ -167,9 +167,9 @@ svg:not(:root).svg-inline--fa {
 }
 
 .content {
-  background-color: blue;
+  /* background-color: blue; */
   width: 100%;
-  /* display: flex; */
+  background-color: #131313;
 }
 
 .content_poster {

@@ -21,7 +21,7 @@ const SearchBar = ({ onSearch }) => {
       <div className='menu'>
         <i className='fas fa-bars'></i>
         <img src='/images/logo.png' alt='logo' className='img' />
-        <h1>Youtube</h1>
+        <h1>YouTube</h1>
       </div>
 
       <div className='search'>

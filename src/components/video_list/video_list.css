@@ -2,3 +2,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.content_video {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.video {
+  padding: 5px;
+}
