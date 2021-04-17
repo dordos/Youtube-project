@@ -2,7 +2,7 @@ import React from 'react';
 import VideoItem from '../video_item/video_item';
 import './video_list.css';
 
-const VideoList = (props) => (
+const VideoList = ({ videos, onVideoClick }) => (
   <div className='content'>
     <div className='content_poster'>
       <button className='content_poster_delete'>X</button>
@@ -10,8 +10,8 @@ const VideoList = (props) => (
       <img src='/images/youtube-posters.png' alt='' />
     </div>
     <div className='content_video'>
-      {props.videos.map((video) => (
-        <VideoItem key={video.id} video={video} />
+      {videos.map((video) => (
+        <VideoItem key={video.id} video={video} onVideoClick={onVideoClick} />
       ))}
     </div>
   </div>
