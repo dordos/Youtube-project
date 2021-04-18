@@ -1,5 +1,7 @@
 .header {
+  position: fixed;
   height: 56px;
+  width: 100%;
   display: flex;
   background-color: #202020;
   align-items: center;
@@ -34,25 +36,25 @@
 
 .search input {
   width: 35rem;
-  height: 24px;
+  height: 30px;
   background-color: #0f0f0f;
-  border: 0;
+  border: 1px rgba(56, 56, 56, 0.651) solid;
   color: white;
   font-size: 16px;
 }
 
 .search button {
   width: 60px;
-  height: 26px;
+  height: 30px;
   border: 0;
   cursor: pointer;
   outline: none;
 }
 
 .search svg {
-  font-size: 24px;
-  color: white;
   margin-left: 15px;
+  font-size: 28px;
+  color: white;
 }
 
 .buttonImg {
@@ -69,7 +71,8 @@
 }
 
 .etc svg {
-  padding: 0px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .etc_button {
@@ -90,7 +93,7 @@
 .etc_button p {
   display: flex;
   align-items: center;
-  font-size: 15px;
+
   margin-right: 10px;
 }
 
@@ -104,16 +107,17 @@
 }
 
 .contentBox {
+  padding-top: 56px;
+  top: 50px;
   display: flex;
   height: 100%;
 }
 .side_bar {
   width: 300px;
-  height: 100%;
+
   color: #7d7d7d;
   font-weight: 600;
   background-color: #202020;
-  overflow: auto;
 }
 
 hr {
@@ -201,6 +205,6 @@ svg:not(:root).svg-inline--fa {
   background-color: rgba(255, 255, 255, 0);
   border: 2px black solid;
   font-weight: 400;
-  padding: 5px 15px;
+
   cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Search_bar from './components/search_bar/search_bar';
 import SideBar from './components/side_bar/side_bar';
 import VideoDetail from './components/video_detail/video_detail';
@@ -29,11 +30,18 @@ function App({ youtube }) {
     <>
       <Search_bar onSearch={search} />
       <div className='contentBox'>
-        <SideBar />
-        <section>
-          <VideoList videos={videos} onVideoClick={selectVideo} />
-          {selectedVideo && <VideoDetail video={selectedVideo} />}
-        </section>
+        <BrowserRouter>
+          <Switch>
+            <Route path={('', '/')} exact>
+              <SideBar />
+              <VideoList videos={videos} onVideoClick={selectVideo} />
+            </Route>
+            <Route path='/videodetail'>
+              {/* <VideoDetail /> */}
+              {selectedVideo && <VideoDetail video={selectedVideo} />}
+            </Route>
+          </Switch>
+        </BrowserRouter>
       </div>
     </>
   );
