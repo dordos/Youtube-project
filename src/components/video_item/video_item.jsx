@@ -3,13 +3,8 @@ import { useHistory } from 'react-router';
 import './video_item.css';
 
 const VideoItem = ({ video, video: { snippet }, onVideoClick }) => {
-  const history = useHistory();
-  // props.history.push('/videodetail')
   return (
-    <li
-      className='video'
-      onClick={() => onVideoClick(history.push('/videodetail'))}
-    >
+    <li className='video' onClick={() => onVideoClick(video)}>
       <img
         className='thumbnail'
         src={snippet.thumbnails.medium.url}

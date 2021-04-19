@@ -30,18 +30,14 @@ function App({ youtube }) {
     <>
       <Search_bar onSearch={search} />
       <div className='contentBox'>
-        <BrowserRouter>
-          <Switch>
-            <Route path={('', '/')} exact>
-              <SideBar />
-              <VideoList videos={videos} onVideoClick={selectVideo} />
-            </Route>
-            <Route path='/videodetail'>
-              {/* <VideoDetail /> */}
-              {selectedVideo && <VideoDetail video={selectedVideo} />}
-            </Route>
-          </Switch>
-        </BrowserRouter>
+        {selectedVideo ? (
+          <VideoDetail video={selectedVideo} videos_item={videos} />
+        ) : (
+          <>
+            (<SideBar />
+            <VideoList videos={videos} onVideoClick={selectVideo} />)
+          </>
+        )}
       </div>
     </>
   );

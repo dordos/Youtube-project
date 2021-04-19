@@ -3,6 +3,7 @@ import './search_bar.css';
 
 const SearchBar = ({ onSearch }) => {
   const inputRef = useRef();
+
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
